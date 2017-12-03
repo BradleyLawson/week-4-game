@@ -1,8 +1,14 @@
 body{
-	background: tan;
+	background: #64896b;
+	font-family: Georgia;
+	font-weight: bold;
 }
 .jumbotron{
-	background: white;
+	background: #202b22;
+	color: white;
+}
+.well{
+	background: black;
 }
 .buttons{
 	margin-bottom: 20px;
