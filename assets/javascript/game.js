@@ -50,6 +50,13 @@ var ironIconGeneratedNumber = Math.floor((Math.random() * 12) + 1);
 
 	}
 
+	var displayYouWin = function(){
+			$("#displayYouWinOrLose").html("You Win!");
+	}
+	var displayYouLose = function(){
+			$("#displayYouWinOrLose").html("You Lose!");
+	}
+
 	var resetGame = function(){
 		wins = 0;
 		losses = 0;
@@ -78,11 +85,13 @@ var ironIconGeneratedNumber = Math.floor((Math.random() * 12) + 1);
 
 			$("#updateLosses").html(losses);
 
-			$("body").css("background", "tan");
+			$("body").css('background-image', 'url(https://i.pinimg.com/originals/83/97/e9/8397e948100ee07e5b730a0a75f81cd3.jpg)');
 
-			$("#displayYouWinOrLose").html("You Lose!")
 
-			reset();
+
+			displayYouLose();
+
+			setTimeout(reset, 5000);
 
 		} else if ( score == randomGeneratedNumber){
 			
@@ -90,11 +99,11 @@ var ironIconGeneratedNumber = Math.floor((Math.random() * 12) + 1);
 
 			$("#updateWins").html(wins);
 
-			$("body").css("background-color", "green");
+			$("body").css("background-image", "url(http://www.mdpestnet.org/wp-content/uploads/2014/03/govern_8.jpg)");
 
-			$("#displayYouWinOrLose").html("You Win!")
+			displayYouWin();
 
-			reset();
+			setTimeout(reset, 5000);
 		}
 
 
